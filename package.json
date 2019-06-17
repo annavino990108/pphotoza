@@ -26,6 +26,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
+    "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "migrate-mongo -f migrate-mongo-config.js"
   },
