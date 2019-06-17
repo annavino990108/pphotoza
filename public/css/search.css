@@ -1,0 +1,217 @@
+@charset "UTF-8";
+body {
+  font-family: Helvetica;
+}
+
+.page-search {
+  background-attachment: fixed;
+  background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+  background: #FBFEF9;
+  overflow-x: hidden;
+}
+
+.menu {
+  background-color: black;
+}
+
+.search-fon {
+  border-radius: 3px;
+  width: 90%;
+  height: 100%;
+  margin: 10px auto;
+}
+
+.search-photographer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-title .title {
+  font-weight: bold;
+  font-size: 50px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 20px;
+  line-height: 1.5em;
+}
+
+.search {
+  width: 100%;
+  height: auto;
+  background: none;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.search__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search__container label {
+  font-size: 20px;
+  color: #fff;
+}
+
+.search__container select {
+  height: 50px;
+  border-radius: 1px;
+}
+
+.search__button {
+  display: flex;
+  justify-content: center;
+}
+
+.search__button button {
+  padding: 7px 40px;
+  margin: 20px 0;
+  width: 320px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #000;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #000 50%, #000);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.search__button button:hover {
+  background-position: 0 0;
+  color: #FBFEF9;
+}
+
+.photographer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  padding: 30px 0px;
+}
+
+.box-photographer:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 1s;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-photographer a:hover {
+  text-decoration: none;
+}
+
+.box-photographer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+  width: 250px;
+  height: 350px;
+  border-radius: 3px;
+  background: #FBFEF9;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box-photographer .photo-av {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-photographer .photo-av img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-photographer .information {
+  z-index: 1;
+  margin: 0px 5px;
+  border-radius: 3px;
+  padding: 10px;
+  color: #000;
+}
+
+.box-photographer .information .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box-photographer .information .city {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box-photographer .information .cost {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FBFEF9;
+}
+
+.box-photographer a:visited {
+  text-decoration: none;
+  color: #282827 !important;
+  /* Цвет ссылок */
+}
+
+.box-photographer a:active {
+  text-decoration: none;
+  color: #282827 !important;
+  /* Цвет ссылок */
+}
+
+.box-photographer a {
+  text-decoration: none;
+  color: #282827 !important;
+  /* Цвет ссылок */
+}
+
+.box-photographer a:hover {
+  text-decoration: none;
+  color: #282827 !important;
+  /* Цвет ссылок */
+}
+.null_search{
+  text-align: center;
+  color: #96E6B3;
+  font-size: 40px;
+}

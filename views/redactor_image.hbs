@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/public/css/redactor_image.css" />
+    <link rel="shortcut icon" href="/public/image/ico.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+  </head>
+     <body>
+    <div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+			</div>
+			<div class="content">
+				<div class="component">
+					<div class="overlay">
+						<div class="overlay-inner">
+						</div>
+					</div>
+          <img class="resize-image" src="{{file.path}}" alt="Image" />
+
+      
+             <a  class="btn-crop js-crop btn_load" id="{{file._id}}">загрузить</a>
+				</div>
+				<div class="a-tip">
+					<p> Удерживайте <span>SHIFT</span> при изменении размера, чтобы сохранить исходное соотношение сторон.</p>
+				</div>
+			</div>
+		</div>
+    <script type="text/javascript" src="/public/js/redactor.js"></script>
+  </body>
+</html>

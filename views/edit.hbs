@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/account-edit.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+   <link rel="stylesheet" href="/public/css/media-account-edit.css" type = "text/css">
+   <link rel="shortcut icon" href="/public/image/ico.png" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-edit">
+  {{>menu}}
+
+    <div class="account-edit">
+  <div class="account-edit-title">
+    <div class="back"><a href="/site/acount"><img src="/public/image/icons8-back-arrow-501.png"></a></div>
+    <span>Изменение данных</span>
+  </div>
+    <div class="information">
+      <div class="photo-img">
+      <img src="{{user.image}}">
+   <div class="download">
+         <span class="download__title">Загрузить фото</span>
+          <div class="download__img">
+          <form  method="POST" enctype="multipart/form-data" name="fileinfo" id="imgmain">
+           <div class="fl_upld">
+             <label><input id="fl_inp" type="file" name="file">Выберите файл</label>
+             <div id="fl_nm">Файл не выбран</div>
+           </div>
+           <button type="submit" name="button"class="upload-button">Загрузить</button>
+          </form>
+         </div>
+       </div>
+
+      </div>
+      <div class="about-me"><form class="about-me" id="formEdit">
+        <div class="about-me__name">
+          <input type="text" name="firstName" value="{{user.firstName}}" />
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="lastName" value="{{user.lastName}}" />
+        </div>
+        <div class="about-me__city">
+          <select id="district">
+            <option value="{{user.district_id}}" selected>{{district_name}}</option>
+            {{#each district}}
+              <option value="{{this.district}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="about-me__city">
+          <select id="region">
+            <option value="{{user.region_id}}" selected>{{region_name}}</option>
+            {{#each region}}
+              <option value="{{this.region}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="about-me__city">
+          <select id="city">
+            <option value="{{user.city_id}}" selected>{{user.city_name}}</option>
+            {{#each city}}
+              <option value="{{this.city}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="about_youself" placeholder="Напишите что-нибудь о себе" value="{{user.about_youself}}">
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="web_site" placeholder="Укажите свой сайт портфолио" value="{{user.web_site}}">
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="cost_works" placeholder="Укажите цену работы" value="{{user.cost_works}}">
+        </div>
+
+         <span>В каких направлениях производится съемка:</span><br>
+
+        <input type="checkbox" name="check" value="Портрет"><i class="list_nap">Портрет</i>
+        <input type="checkbox" name="check" value="Пейзаж"><i class="list_nap">Пейзаж</i>
+
+        <input type="checkbox" name="check" value="Натюрморт"><i class="list_nap">Натюрморт</i>
+        <input type="checkbox" name="check" value="Мобилография"><i class="list_nap">Мобилография</i>
+        <input type="checkbox" name="check" value="Флора и фауна"><i class="list_nap">Флора и фауна</i>
+        <input type="checkbox" name="check" value="Макро"><i class="list_nap">Макро</i>
+        <input type="checkbox" name="check" value="Репортаж"><i class="list_nap">Репортаж</i>
+        <input type="checkbox" name="check" value="Архитектура"><i class="list_nap">Архитектура</i>
+        <input type="checkbox" name="check" value="Глянцевая фотография"><i class="list_nap">Глянцевая фотография</i>
+        <input type="checkbox" name="check" value="Жанровая фотография"><i class="list_nap">Жанровая фотография</i>
+        <input type="checkbox" name="check" value="Свадебная фотография"><i class="list_nap">Свадебная фотография</i>
+        <input type="checkbox" name="check" value="Спортивная фотография"><i class="list_nap">Спортивная фотография</i>
+        <input type="checkbox" name="check" value="Травелфото"><i class="list_nap">Травелфото</i>
+        <input type="checkbox" name="check" value="Фотоохота"><i class="list_nap">Фотоохота</i>
+
+
+      <div class="edit">
+        <button type="submit"><a class="edit__button">Cохранить изменения</a></button>
+      </div>
+    </form>
+
+    </div>
+    </div>      
+  </div>
+  <footer class="footer">
+    © 2019 «PHOTOZA»
+  </footer>
+
+    <script type="text/javascript" src="/public/js/geo.js"></script>
+    <script type="text/javascript" src="/public/js/edit.js"></script>
+</body>
+</html>

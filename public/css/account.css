@@ -1,0 +1,297 @@
+.account-page {
+  background: #fff;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Helvetica;
+}
+
+.menu {
+  background-color: #000;
+  flex-wrap: wrap;
+}
+
+.account {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.account-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.account-title span {
+  font-weight: bold;
+  font-size: 50px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 20px;
+  line-height: 1.5em;
+}
+
+.account-until {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  color: #000;
+}
+
+.information__photo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.information__photo img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.information__about-me {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.information__about-me__name {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.information__about-me__city {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.information__about-me__style {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.information__about-me__style span {
+  font-size: 25px;
+}
+
+.information__about-me__style .form-check-label {
+  margin-left: 20px;
+}
+
+.information__about-me__about-me {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.information__about-me__cost {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.information__about-me .information-edit {
+  width: 100%;
+}
+
+.information__about-me .information-edit button {
+  border: none;
+  background: none;
+}
+
+.information__about-me .information-edit__button {
+  padding: 10px 20px;
+  width: 250px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #96E6B3;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #96E6B3;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.information__about-me .information-edit__button:hover {
+  background-position: 0 0;
+  color: #fff;
+}
+
+.information__about-me .information-edit a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.download {
+  margin: 10px auto 0px auto;
+  padding: 10px 0px;
+  width: 100%;
+  height: auto;
+  background-color: none;
+  color: #000;
+  text-align: center;
+  height: auto;
+  border: 3px dashed #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download__title {
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.download__img {
+  margin: 0 auto;
+}
+
+.download__img .fl_upld {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.download__img #fl_inp {
+  display: none;
+}
+
+.download__img .fl_upld label {
+  padding: 10px 20px;
+  width: 280px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #96E6B3;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #96E6B3;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.download__img .fl_upld label:hover {
+  background-position: 0 0;
+  color: #fff;
+}
+
+.download__img #fl_nm {
+  margin-top: 10px;
+  color: #000;
+}
+
+.download__img .upload-button {
+  padding: 10px 20px;
+  width: 280px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #96E6B3;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #96E6B3;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.download__img .upload-button:hover {
+  background-position: 0 0;
+  color: #fff;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery .gallery-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.gallery .photobox {
+  position: relative;
+}
+
+.gallery .photobox .photo-img {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.gallery .photobox .delete {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  z-index: 99999999;
+}
+
+.gallery .photobox .edit-img {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  right: 25%;
+  width: 40px;
+  height: 40px;
+  z-index: 99999999;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FBFEF9;
+}
+.error{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
